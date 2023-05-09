@@ -8,12 +8,14 @@
     <title>PHPCalculator</title>
     <style>
         .main-container{
-            background-color:green;
+            background-color:rgb(9, 54, 74);
             width:100%;
             height: 100%;
         }
         hr{
             font-weight:bold;
+            width:200px;
+            margin-right:50%;
         }
         .calculater-container{
             padding: 50px;
@@ -21,7 +23,7 @@
             height: 60%;
             background-color:yellow;
             border-radius: 5% 30% 1%;
-            box-shadow:15px 40px 30px black;
+            box-shadow:15px 40px 30px rgb(126, 125, 125);
             border-top:0px;
             border-bottom:5px solid ;
             border-left:0px ;
@@ -35,7 +37,7 @@
         .heading-section h1{
             font-size:50px;
             padding:10px;
-            margin:5px;
+            margin-right:25px;
             border-left:10px solid green;
         }
         .form-section{
@@ -49,6 +51,10 @@
             margin:-15px;
             color:blue;
             border:none;
+        }
+        .select{
+            width:200px;
+            background-color:yellow;
         }
         .message-div{
             padding: 5px;
@@ -68,9 +74,9 @@
 <div class=" main-container container-fluid d-flex justify-content-center align-items-center">
     <div class=" calculater-container p-5 container  d-flex flex-column justify-content-center align-items-center">
         <div class="row">
-            <div class="container-fluid d-flex justify-content-center align-items-center">
+            <div class="container-fluid d-flex justify-content-center">
                 <div class=" heading-section col-6 "> <h1> <strong>Php Calculater</strong> </h1></div>
-                <div class=" form-section col-6 ">
+                <div class="  form-section col-6 ">
                     <form method="POST">
                         <div class="num1_div">
                         <input type="text" name="number1"  placeholder="Enter 1st number"> <hr><br></div>
@@ -125,7 +131,9 @@
                                 break;
                         }
                     }
-    
+                    else{
+                        
+                    }
                 ?>
                 </p>
                     </div>
